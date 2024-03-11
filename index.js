@@ -5,7 +5,8 @@ const port = 3000
 
 //Set up routes
 app.get('/', (req, res) => {
-    res.send(`Welcome to the page`)
+    const file = __dirname + '/AoE.pdf';
+    res.download(file);
   }
 )
 
